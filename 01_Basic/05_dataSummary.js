@@ -38,9 +38,15 @@ age:25;
 
 */
 
- function array (){
-console.log("good morning !");
+//  function array (){
+// console.log("good morning !");
 
-}
+// }
 array();
 // console.log(myfunction);
+
+const arr={
+    name:"sidhanta",
+    age:12
+}
+console.log(arr);
