@@ -54,7 +54,32 @@ const obj=[
     email:"sihanta@123"
 }
 ];
-console.log(obj[1].email);
+// console.log(obj[1].email);
+// console.log(obj.keys(tinderuser));
+console.log(Object.keys(tinderuser));
+console.log(Object.values(tinderuser));
+console.log(Object.values(tinderuser).length);
+console.log(tinderuser.hasOwnProperty('id'));
+
+
+
+// *****************objects de-structure and json api intro***************
+
+
+// api--application programmingintroface.
+
+
+const course={
+    price:12000,
+    coursenaem:"python data structure",
+    courseInstructor:"sidhanta"
+}
+
+// const {price}=course
+const {price:p}=course
+// console.log(p);
+
+
 
 
 
