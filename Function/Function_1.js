@@ -96,17 +96,44 @@ return `The addition result is ${num+num1}`;
 
 
 
-const myarray=[10,20,50,6,0];
+// const myarray=[10,20,50,6,0];
 
-function arr(obj){
-    return obj[0];
-}
-console.log(arr(myarray));
+// function arr(obj){
+//     return obj[0];
+// }
+// console.log(arr(myarray));
 
 
 
 // scope of function ............>
 
+// function abc(){
+//     let a=10;
+//     const b=20;
+//     var c=30;  //  when {}-->this bracket when com this is called scope .
+
+// }
+
+function one(){
+
+    const username="sidhanta"
+
+    function two(){
+        const id=22212
+        console.log(username);
+        
+    }
+    console.log(id);
+    two();
+    
+}
+one();
+// console.log("sidhanta");
+
+function addition(...num){
+    return num;
+}
+console.log(addition(10,20));
 
 
 
