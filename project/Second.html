@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <center>
+            <h1>!....BMI- Calculator....!</h1>
+            Hight in CM <input class="Hight" type="text"placeholder="Enter the hight ?">
+            <br>
+            <br>
+            Weight in CM <input class="weight" type="text"placeholder="Enter the weigth ?">
+            <br>
+            <br>
+            <button type="button">Calculate</button>
+           
+            <pre>
+
+        BMI weight Guide:-
+        under Weight=less than 18.6
+        Normal Range=18.6 and 24.9
+        Overweight=Greather than 24.9
+            </pre>
+        </center>
+         <div style="color: aqua;" class="result"></div>
+    </form>
+</body>
+<script>
+const form=document.querySelector('form')
+form.addEventListener('submit',function(e){
+    e.preventDefault();
+
+    const hight=parseInt(document.querySelector('.Hight').value)
+    const weight=parseInt(document.querySelector('weight').value)
+    const result=parseInt(document.querySelector('.result').value)
+    if(hight===''|| hight<0 || isNaN(hight)){
+        result.innerHTML="Enter a Valid number of hight."
+
+    }
+})
+</script>
+</html>

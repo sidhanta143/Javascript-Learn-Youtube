@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hii sidhanta</h1>
+    <br>
+    <button id="start">Start</button>
+    <br>
+<br>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+let id;
+const count=function(){
+  id=setInterval(() => {
+  console.log("sidhanta");
+  
+}, 1000);
+  
+}
+
+ document.querySelector('#start').addEventListener('click',count)
+ 
+ const stop=function(){
+ clearInterval(id)
+ }
+ document.querySelector('#stop').addEventListener('click',stop)
+
+
+
+
+
+</script>
+</html>

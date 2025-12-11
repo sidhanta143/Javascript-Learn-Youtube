@@ -80,16 +80,59 @@
 // map .....................>
 
 
-const map=new Map()
-map.set("name","sidhanta");
-map.set('id','31313')
+// const map=new Map()
+// map.set("name","sidhanta");
+// map.set('id','31313')
+// console.log(map);
+// // map.clear()
+// map.forEach((item)=>{
+//     return map;
+// })
 
 // console.log(map);
 
 
-for(const [key ,value] of map){
-    console.log(key ,':=>',value);
+// for(const [key ,value] of map){
+//     console.log(key ,':=>',value);
     
-}
+// }
+
+
+const arr=[
+    {
+        id:1,
+        name:"sidhanta",
+        pass:13646,
+    },
+    {
+        id:1,
+        name:"sidhanta",
+        pass:13646,
+    },
+    {
+        id:2,
+        name:"sidhanta",
+        pass:11346,
+    },
+    {
+        id:3,
+        name:"sidhanta",
+        pass:110646,
+    },
+];
+
+const arrays=arr.filter((ids)=>{
+ return ids.id===3
+});
+console.log(arrays);
+
+
+const numbers=[1,2,5,4,8,7,8,10];
+ const numds=numbers.map((num)=>{
+    // const n= 
+    return num+2;
+})
+console.log(numds);
+
 
 
